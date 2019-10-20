@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import FilmCard from '../FilmCard/FilmCard';
 
 export const Main = (props) => {
-  const {films} = props;
+  const {films, onClick} = props;
 
   return (
     <div id='main'>
@@ -128,7 +128,8 @@ export const Main = (props) => {
 };
 
 Main.propTypes = {
-  films: PropTypes.arrayOf(PropTypes.string).isRequired
+  films: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 export default Main;

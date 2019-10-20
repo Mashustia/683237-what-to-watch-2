@@ -274,6 +274,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -298,6 +299,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -320,6 +322,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -342,6 +345,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -364,6 +368,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -386,6 +391,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -408,6 +414,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -430,6 +437,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -452,6 +460,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -474,6 +483,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -496,6 +506,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -518,6 +529,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -540,6 +552,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -562,6 +575,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -584,6 +598,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -606,6 +621,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -628,6 +644,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -650,6 +667,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -672,6 +690,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
@@ -694,6 +713,7 @@ exports[`Main component renders correctly 1`] = `
           </div>
           <h3
             className="small-movie-card__title"
+            onClick={[MockFunction]}
           >
             <a
               className="small-movie-card__link"
