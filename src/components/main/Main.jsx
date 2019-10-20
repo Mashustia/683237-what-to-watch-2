@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Main = () => {
+export const Main = (props) => {
+  const {films} = props;
+
   return (
     <div id='main'>
       <section className="movie-card">
@@ -101,7 +104,7 @@ export const Main = () => {
                 <img src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg" alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Fantastic Beasts: The Crimes of Grindelwald</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[0]}</a>
               </h3>
             </article>
 
@@ -110,7 +113,7 @@ export const Main = () => {
                 <img src="img/bohemian-rhapsody.jpg" alt="Bohemian Rhapsody" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Bohemian Rhapsody</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[1]}</a>
               </h3>
             </article>
 
@@ -119,7 +122,7 @@ export const Main = () => {
                 <img src="img/macbeth.jpg" alt="Macbeth" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Macbeth</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[2]}</a>
               </h3>
             </article>
 
@@ -128,7 +131,7 @@ export const Main = () => {
                 <img src="img/aviator.jpg" alt="Aviator" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Aviator</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[3]}</a>
               </h3>
             </article>
 
@@ -138,7 +141,7 @@ export const Main = () => {
                 <img src="img/we-need-to-talk-about-kevin.jpg" alt="We need to talk about Kevin" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">We need to talk about Kevin</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[4]}</a>
               </h3>
             </article>
 
@@ -147,7 +150,7 @@ export const Main = () => {
                 <img src="img/what-we-do-in-the-shadows.jpg" alt="What We Do in the Shadows" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">What We Do in the Shadows</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[5]}</a>
               </h3>
             </article>
 
@@ -156,7 +159,7 @@ export const Main = () => {
                 <img src="img/revenant.jpg" alt="Revenant" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Revenant</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[6]}</a>
               </h3>
             </article>
 
@@ -165,7 +168,7 @@ export const Main = () => {
                 <img src="img/johnny-english.jpg" alt="Johnny English" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Johnny English</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[7]}</a>
               </h3>
             </article>
 
@@ -175,7 +178,7 @@ export const Main = () => {
                 <img src="img/shutter-island.jpg" alt="Shutter Island" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Shutter Island</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[8]}</a>
               </h3>
             </article>
 
@@ -184,7 +187,7 @@ export const Main = () => {
                 <img src="img/pulp-fiction.jpg" alt="Pulp Fiction" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Pulp Fiction</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[9]}</a>
               </h3>
             </article>
 
@@ -193,7 +196,7 @@ export const Main = () => {
                 <img src="img/no-country-for-old-men.jpg" alt="No Country for Old Men" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">No Country for Old Men</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[10]}</a>
               </h3>
             </article>
 
@@ -202,7 +205,7 @@ export const Main = () => {
                 <img src="img/snatch.jpg" alt="Snatch" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Snatch</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[11]}</a>
               </h3>
             </article>
 
@@ -213,7 +216,7 @@ export const Main = () => {
 
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Moonrise Kingdom</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[12]}</a>
               </h3>
             </article>
 
@@ -222,7 +225,7 @@ export const Main = () => {
                 <img src="img/seven-years-in-tibet.jpg" alt="Seven Years in Tibet" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Seven Years in Tibet</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[13]}</a>
               </h3>
             </article>
 
@@ -231,7 +234,7 @@ export const Main = () => {
                 <img src="img/midnight-special.jpg" alt="Midnight Special" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Midnight Special</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[14]}</a>
               </h3>
             </article>
 
@@ -240,7 +243,7 @@ export const Main = () => {
                 <img src="img/war-of-the-worlds.jpg" alt="War of the Worlds" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">War of the Worlds</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[15]}</a>
               </h3>
             </article>
 
@@ -250,7 +253,7 @@ export const Main = () => {
                 <img src="img/dardjeeling-limited.jpg" alt="Dardjeeling Limited" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Dardjeeling Limited</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[16]}</a>
               </h3>
             </article>
 
@@ -259,7 +262,7 @@ export const Main = () => {
                 <img src="img/orlando.jpg" alt="Orlando" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Orlando</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[17]}</a>
               </h3>
             </article>
 
@@ -268,7 +271,7 @@ export const Main = () => {
                 <img src="img/mindhunter.jpg" alt="Mindhunter" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Mindhunter</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[18]}</a>
               </h3>
             </article>
 
@@ -277,7 +280,7 @@ export const Main = () => {
                 <img src="img/midnight-special.jpg" alt="Midnight Special" width="280" height="175"/>
               </div>
               <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Midnight Special</a>
+                <a className="small-movie-card__link" href="movie-page.html">{films[19]}</a>
               </h3>
             </article>
           </div>
@@ -303,6 +306,10 @@ export const Main = () => {
       </div>
     </div>
   );
+};
+
+Main.propTypes = {
+  films: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Main;
