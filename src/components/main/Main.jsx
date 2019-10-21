@@ -101,7 +101,7 @@ export const Main = (props) => {
           </ul>
 
           <div className="catalog__movies-list">
-            {films.map((film) => <FilmCard film={film} key={`${film}${Math.floor(Math.random() * 10000)}`}/>)}
+            {films.map((film) => <FilmCard film={film} key={`${film}${Math.floor(Math.random() * 10000)}`} onClick={()=>{}} />)}
           </div>
 
           <div className="catalog__more">
