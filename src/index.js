@@ -4,7 +4,7 @@ import React from 'react';
 import App from './components/app/App';
 
 const init = () => {
-  ReactDOM.render(<App/>, document.querySelector(`#root`));
+  ReactDOM.render(<App />, document.querySelector(`#root`));
 };
 
 init();
