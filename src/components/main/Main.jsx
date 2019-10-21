@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import FilmCard from '../FilmCard/FilmCard';
 
 export const Main = (props) => {
-  const {films, onClick} = props;
+  const {films} = props;
 
   return (
     <div id='main'>
@@ -101,7 +101,7 @@ export const Main = (props) => {
           </ul>
 
           <div className="catalog__movies-list">
-            {films.map((film) => <FilmCard film={film} key={`${film}${Math.floor(Math.random() * 10000)}`}/>)}
+            {films.map((film) => <FilmCard film={film} key={`${film}${Math.floor(Math.random() * 10000)}`} onClick={()=>{}} />)}
           </div>
 
           <div className="catalog__more">
@@ -128,8 +128,7 @@ export const Main = (props) => {
 };
 
 Main.propTypes = {
-  films: PropTypes.arrayOf(PropTypes.string).isRequired,
-  onClick: PropTypes.func.isRequired
+  films: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Main;

@@ -1,10 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Main from './Main';
 
-it(`Main component renders correctly`, () => {
+import FilmCard from './FilmCard';
+
+it(`FilmCard component renders correctly`, () => {
   const component = renderer
-    .create(<Main films={[`Robocop`]} />)
+    .create(<FilmCard film={`Robocop`} onClick={jest.fn()} />)
     .toJSON();
   expect(component).toMatchSnapshot();
 });
