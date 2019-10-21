@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 export function getImgName(film) {
   const COLON = `:`;
   const COLON_REGEXP = /:/g;
@@ -19,7 +17,3 @@ export function getImgName(film) {
 
   return imgName;
 }
-
-getImgName.propTypes = {
-  film: PropTypes.string.isRequired
-};
