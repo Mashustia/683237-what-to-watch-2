@@ -5,6 +5,7 @@ import FilmCard from '../FilmCard/FilmCard';
 
 export const Main = (props) => {
   const {films} = props;
+  console.log(films);
 
   return (
     <div id='main'>
@@ -101,7 +102,7 @@ export const Main = (props) => {
           </ul>
 
           <div className="catalog__movies-list">
-            {films.map((film) => <FilmCard film={film} key={`${film}${Math.floor(Math.random() * 10000)}`} onClick={()=>{}} />)}
+            {films.map((film) => <FilmCard film={film.name} key={`${film.id}`} onClick={()=>{}} />)}
           </div>
 
           <div className="catalog__more">
