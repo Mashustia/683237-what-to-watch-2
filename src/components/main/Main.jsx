@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import FilmCard from '../FilmCard/FilmCard';
+import FilmList from '../FilmList/FilmList';
 
 export const Main = (props) => {
   const {films} = props;
@@ -100,9 +100,7 @@ export const Main = (props) => {
             </li>
           </ul>
 
-          <div className="catalog__movies-list">
-            {films.map((film) => <FilmCard film={film} key={`${film}${Math.floor(Math.random() * 10000)}`} onClick={()=>{}} />)}
-          </div>
+          <FilmList films={films}/>
 
           <div className="catalog__more">
             <button className="catalog__button" type="button">Show more</button>
@@ -128,7 +126,21 @@ export const Main = (props) => {
 };
 
 Main.propTypes = {
-  films: PropTypes.arrayOf(PropTypes.string).isRequired
+  films: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string,
+        name: PropTypes.string.isRequired,
+        genre: PropTypes.string.isRequired,
+        description: PropTypes.string,
+        director: PropTypes.string,
+        starring: PropTypes.string,
+        rating: PropTypes.string,
+        runTime: PropTypes.string,
+        released: PropTypes.string,
+        reviews: PropTypes.array,
+        cover: PropTypes.string,
+      })
+  )
 };
 
 export default Main;

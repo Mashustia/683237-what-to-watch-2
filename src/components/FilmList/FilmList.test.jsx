@@ -1,12 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Main from './Main';
 
-it(`Main component renders correctly`, () => {
+import FilmList from './FilmList';
+
+it(`FilmList component renders correctly`, () => {
   const component = renderer
-    .create(<Main films={[{
+    .create(<FilmList films={[{
       id: `1`,
-      name: `Robocop`,
+      name: `F`,
       genre: ``,
       description: ``,
       director: ``,

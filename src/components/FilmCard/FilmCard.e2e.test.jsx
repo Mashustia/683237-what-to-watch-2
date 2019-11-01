@@ -11,6 +11,8 @@ it(`Handler is called by click on heading`, () => {
   const filmCard = shallow(
       <FilmCard
         film={``}
+        id={`0`}
+        onFilmFocus={jest.fn()}
         onClick={preventDefault}
       />
   );
@@ -19,4 +21,23 @@ it(`Handler is called by click on heading`, () => {
   heading.simulate(`click`, {preventDefault});
 
   expect(preventDefault).toHaveBeenCalledTimes(1);
+});
+
+it(`Handler returns film id`, () => {
+  const id = `1`;
+  const returnId = jest.fn();
+
+  const filmCard = shallow(
+      <FilmCard
+        film={``}
+        id={`0`}
+        onFilmFocus={returnId}
+        onClick={jest.fn()}
+      />
+  );
+
+  const card = filmCard.find(`.small-movie-card__title`);
+  card.simulate(`mouseEnter`, returnId(id));
+
+  expect(returnId).toHaveBeenCalledWith(id);
 });
