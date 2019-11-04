@@ -139,6 +139,7 @@ Main.propTypes = {
         released: PropTypes.string,
         reviews: PropTypes.array,
         cover: PropTypes.string,
+        preview: PropTypes.string
       })
   )
 };

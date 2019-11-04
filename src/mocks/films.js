@@ -10,7 +10,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `2`,
@@ -23,7 +24,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `3`,
@@ -36,7 +38,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `4`,
@@ -49,7 +52,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `5`,
@@ -62,7 +66,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `6`,
@@ -75,7 +80,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `7`,
@@ -88,7 +94,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `8`,
@@ -101,7 +108,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `9`,
@@ -114,7 +122,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `10`,
@@ -127,7 +136,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `11`,
@@ -140,7 +150,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `12`,
@@ -153,7 +164,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `13`,
@@ -166,7 +178,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `14`,
@@ -179,7 +192,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `15`,
@@ -192,7 +206,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `16`,
@@ -205,7 +220,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `17`,
@@ -218,7 +234,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `18`,
@@ -231,7 +248,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `19`,
@@ -244,7 +262,8 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   },
   {
     id: `20`,
@@ -257,6 +276,7 @@ export const films = [
     runTime: ``,
     released: ``,
     reviews: [],
-    cover: ``
+    cover: ``,
+    preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
   }
 ];

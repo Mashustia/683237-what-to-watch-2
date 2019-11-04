@@ -1392,3 +1392,15 @@ main {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
+
+.film-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  object-fit: cover;
+}
+
+.film-hide {
+  display: none;
+}

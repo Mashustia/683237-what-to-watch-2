@@ -12,12 +12,27 @@ class FilmList extends Component {
     };
 
     this.onFilmFocus = this.onFilmFocus.bind(this);
+    this.onFilmLeave = this.onFilmLeave.bind(this);
   }
 
   onFilmFocus(id) {
-    this.setState({
-      inFocus: id
-    });
+    return () => {
+      if (this.state.inFocus !== id) {
+        this.setState({
+          inFocus: id
+        });
+      }
+    };
+  }
+
+  onFilmLeave() {
+    return (e) => {
+      if (e.target.className.includes(`film-active`)) {
+        this.setState({
+          inFocus: ``
+        });
+      }
+    };
   }
 
   render() {
@@ -27,10 +42,13 @@ class FilmList extends Component {
       <div className='catalog__movies-list'>
         {films.map((film) => <FilmCard
           film={film.name}
-          key={`${film.id}`}
+          key={film.id}
           id={film.id}
           onClick={() => {}}
+          preview={film.preview}
           onFilmFocus={this.onFilmFocus}
+          onFilmLeave={this.onFilmLeave}
+          isVideoActive={this.state.inFocus === film.id}
         />)}
       </div>
     );
@@ -51,6 +69,7 @@ FilmList.propTypes = {
         released: PropTypes.string,
         reviews: PropTypes.array,
         cover: PropTypes.string,
+        preview: PropTypes.string
       })
   )
 };
