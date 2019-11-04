@@ -18,16 +18,18 @@ class VideoPlayer extends Component {
     const {preview, active} = this.props;
 
     return (
-      <video
-        className={active ? `film-active` : `film-hide`}
-        src={preview}
-        muted
-        width='280'
-        height='175'
-        autoPlay
-        preload={`none`}
-        ref={this.videoRef}
-      />
+      <div className={active ? `film-active` : `film-hide`}>
+        <video
+          className={`preview`}
+          src={preview}
+          muted
+          // width='280'
+          // height='175'
+          autoPlay
+          preload={`none`}
+          ref={this.videoRef}
+        />
+      </div>
     );
   }
 }

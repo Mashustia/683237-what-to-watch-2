@@ -27,7 +27,7 @@ class FilmList extends Component {
 
   onFilmLeave() {
     return (e) => {
-      if (e.target.className.includes(`film-active`)) {
+      if (e.target.className.includes(`preview`)) {
         this.setState({
           inFocus: ``
         });
