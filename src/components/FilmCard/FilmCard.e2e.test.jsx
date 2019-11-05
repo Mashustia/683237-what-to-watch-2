@@ -14,6 +14,9 @@ it(`Handler is called by click on heading`, () => {
         id={`0`}
         onFilmFocus={jest.fn()}
         onClick={preventDefault}
+        isVideoActive={false}
+        preview={``}
+        onFilmLeave={jest.fn()}
       />
   );
 
@@ -33,6 +36,9 @@ it(`Handler returns film id`, () => {
         id={`0`}
         onFilmFocus={returnId}
         onClick={jest.fn()}
+        isVideoActive={false}
+        preview={``}
+        onFilmLeave={jest.fn()}
       />
   );
 

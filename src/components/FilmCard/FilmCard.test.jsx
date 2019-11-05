@@ -10,6 +10,9 @@ it(`FilmCard component renders correctly`, () => {
       id={`1`}
       onFilmFocus={jest.fn()}
       onClick={jest.fn()}
+      isVideoActive={false}
+      preview={`test`}
+      onFilmLeave={jest.fn()}
     />)
     .toJSON();
   expect(component).toMatchSnapshot();
