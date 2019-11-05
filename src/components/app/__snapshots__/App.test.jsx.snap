@@ -289,10 +289,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -327,10 +325,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -365,10 +361,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -403,10 +397,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -441,10 +433,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -479,10 +469,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -517,10 +505,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -555,10 +541,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -593,10 +577,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -631,10 +613,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -669,10 +649,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -707,10 +685,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -745,10 +721,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -783,10 +757,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -821,10 +793,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -859,10 +829,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -897,10 +865,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -935,10 +901,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -973,10 +937,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>
@@ -1011,10 +973,8 @@ exports[`App component renders correctly 1`] = `
             className="film-hide"
           >
             <video
-              autoPlay={true}
               className="preview"
-              muted={true}
-              preload="none"
+              controls={true}
               src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
             />
           </div>

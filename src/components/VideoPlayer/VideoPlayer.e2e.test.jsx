@@ -12,18 +12,13 @@ it(`Button click change state`, () => {
 
   const videoPlayer = mount(
       <VideoPlayer
-        isPlaying={isStopped}
-        src={``}
-        onPlayButtonClick={jest.fn()}
+        preview={`test`}
+        active={false}
       />
   );
 
-  const button = videoPlayer.find(`.track__button`);
-  expect(videoPlayer.state(`isPlaying`)).toEqual(isStopped);
+  expect(videoPlayer.state(`isPlayed`)).toEqual(isStopped);
 
-  button.simulate(`click`);
-  expect(videoPlayer.state(`isPlaying`)).toEqual(isPlayed);
-
-  button.simulate(`click`);
-  expect(videoPlayer.state(`isPlaying`)).toEqual(isStopped);
+  videoPlayer.setProps({active: true});
+  expect(videoPlayer.state(`isPlayed`)).toEqual(isPlayed);
 });

@@ -34,10 +34,8 @@ exports[`FilmList component renders correctly 1`] = `
       className="film-hide"
     >
       <video
-        autoPlay={true}
         className="preview"
-        muted={true}
-        preload="none"
+        controls={true}
         src=""
       />
     </div>
