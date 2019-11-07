@@ -7,9 +7,10 @@ import VideoPlayer from '../VideoPlayer/VideoPlayer';
 class FilmCard extends React.PureComponent {
   constructor(props) {
     super(props);
-    this._onFilmFocus = this._onFilmFocus.bind(this);
+    this.onFilmFocus = this.onFilmFocus.bind(this);
   }
-  _onFilmFocus() {
+
+  onFilmFocus() {
     this.props.onFilmFocus(this.props.id);
   }
 
@@ -19,7 +20,7 @@ class FilmCard extends React.PureComponent {
     return (
       <article
         className='small-movie-card catalog__movies-card'
-        onMouseEnter={this._onFilmFocus}
+        onMouseEnter={this.onFilmFocus}
         onMouseOut={onFilmLeave}
       >
         <div className='small-movie-card__image'>
