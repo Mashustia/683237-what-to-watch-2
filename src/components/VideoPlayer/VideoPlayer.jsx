@@ -10,30 +10,37 @@ class VideoPlayer extends Component {
     };
 
     this.videoRef = React.createRef();
+    this.timer = null;
+    this.onStopVideo = this.onStopVideo.bind(this);
+    this.onPlayVideo = this.onPlayVideo.bind(this);
   }
 
   componentDidUpdate(prevProps) {
-    const video = this.videoRef.current;
-
-    let timeout;
-
     if (prevProps.active !== this.props.active && !this.props.active) {
-      this.setState({
-        isPlayed: false
-      }, () => {
-        clearTimeout(timeout);
-        video.currentTime = 0;
-        video.pause();
-      });
+      this.onStopVideo();
     }
 
     if (prevProps.active !== this.props.active && this.props.active) {
-      timeout = setTimeout(() => this.setState({isPlayed: true}, () => {
-        if (this.state.isPlayed) {
-          video.play();
-        }
-      }), 3000);
+      this.onPlayVideo();
     }
+  }
+
+  onStopVideo() {
+    this.setState({
+      isPlayed: false
+    }, () => {
+      const video = this.videoRef.current;
+      clearTimeout(this.timer);
+      video.currentTime = 0;
+      video.pause();
+    });
+  }
+
+  onPlayVideo() {
+    const video = this.videoRef.current;
+    this.timer = setTimeout(() => {
+      this.setState({isPlayed: true}, () => video.play());
+    }, 1000);
   }
 
   render() {
@@ -46,6 +53,7 @@ class VideoPlayer extends Component {
           src={preview}
           ref={this.videoRef}
           controls
+          muted
         />
       </div>
     );

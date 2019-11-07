@@ -291,6 +291,7 @@ exports[`Main component renders correctly 1`] = `
             <video
               className="preview"
               controls={true}
+              muted={true}
               src=""
             />
           </div>
