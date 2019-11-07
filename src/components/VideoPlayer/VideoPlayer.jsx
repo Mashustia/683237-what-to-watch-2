@@ -53,7 +53,6 @@ class VideoPlayer extends Component {
           src={preview}
           ref={this.videoRef}
           controls
-          muted
         />
       </div>
     );

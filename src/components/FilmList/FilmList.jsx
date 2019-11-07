@@ -8,7 +8,7 @@ class FilmList extends Component {
     super(props);
 
     this.state = {
-      inFocus: ``
+      focusFilmId: null
     };
 
     this.onFilmFocus = this.onFilmFocus.bind(this);
@@ -16,24 +16,15 @@ class FilmList extends Component {
   }
 
   onFilmFocus(id) {
-    return () => {
-      if (this.state.inFocus !== id) {
-        this.setState({
-          inFocus: id
-        });
-      }
-    };
+    this.setState({
+      focusFilmId: id
+    });
   }
 
   onFilmLeave() {
-    return (e) => {
-      e.preventDefault();
-      if (e.target.className.includes(`preview`)) {
-        this.setState({
-          inFocus: ``
-        });
-      }
-    };
+    this.setState({
+      focusFilmId: null
+    });
   }
 
   render() {
@@ -49,7 +40,7 @@ class FilmList extends Component {
           preview={film.preview}
           onFilmFocus={this.onFilmFocus}
           onFilmLeave={this.onFilmLeave}
-          isVideoActive={this.state.inFocus === film.id}
+          isVideoActive={this.state.focusFilmId === film.id}
         />)}
       </div>
     );
