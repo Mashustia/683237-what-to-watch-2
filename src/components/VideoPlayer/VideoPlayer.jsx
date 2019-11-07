@@ -14,18 +14,25 @@ class VideoPlayer extends Component {
 
   componentDidUpdate(prevProps) {
     const video = this.videoRef.current;
+
+    let timeout;
+
     if (prevProps.active !== this.props.active && !this.props.active) {
-      video.currentTime = 0;
-      video.pause();
       this.setState({
         isPlayed: false
+      }, () => {
+        clearTimeout(timeout);
+        video.currentTime = 0;
+        video.pause();
       });
     }
 
     if (prevProps.active !== this.props.active && this.props.active) {
-      setTimeout(() => this.setState({
-        isPlayed: true
-      }, () => video.play()), 1000);
+      timeout = setTimeout(() => this.setState({isPlayed: true}, () => {
+        if (this.state.isPlayed) {
+          video.play();
+        }
+      }), 3000);
     }
   }
 
