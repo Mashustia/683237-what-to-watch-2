@@ -8,15 +8,22 @@ class FilmList extends Component {
     super(props);
 
     this.state = {
-      inFocus: ``
+      focusFilmId: null
     };
 
     this.onFilmFocus = this.onFilmFocus.bind(this);
+    this.onFilmLeave = this.onFilmLeave.bind(this);
   }
 
   onFilmFocus(id) {
     this.setState({
-      inFocus: id
+      focusFilmId: id
+    });
+  }
+
+  onFilmLeave() {
+    this.setState({
+      focusFilmId: null
     });
   }
 
@@ -27,10 +34,13 @@ class FilmList extends Component {
       <div className='catalog__movies-list'>
         {films.map((film) => <FilmCard
           film={film.name}
-          key={`${film.id}`}
+          key={film.id}
           id={film.id}
           onClick={() => {}}
+          preview={film.preview}
           onFilmFocus={this.onFilmFocus}
+          onFilmLeave={this.onFilmLeave}
+          isVideoActive={this.state.focusFilmId === film.id}
         />)}
       </div>
     );
@@ -51,6 +61,7 @@ FilmList.propTypes = {
         released: PropTypes.string,
         reviews: PropTypes.array,
         cover: PropTypes.string,
+        preview: PropTypes.string
       })
   )
 };

@@ -262,6 +262,7 @@ exports[`App component renders correctly 1`] = `
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -284,10 +285,20 @@ exports[`App component renders correctly 1`] = `
               Fantastic Beasts: The Crimes of Grindelwald
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -310,10 +321,20 @@ exports[`App component renders correctly 1`] = `
               Bohemian Rhapsody
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -336,10 +357,20 @@ exports[`App component renders correctly 1`] = `
               Macbeth
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -362,10 +393,20 @@ exports[`App component renders correctly 1`] = `
               Aviator
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -388,10 +429,20 @@ exports[`App component renders correctly 1`] = `
               We need to talk about Kevin
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -414,10 +465,20 @@ exports[`App component renders correctly 1`] = `
               What We Do in the Shadows
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -440,10 +501,20 @@ exports[`App component renders correctly 1`] = `
               Revenant
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -466,10 +537,20 @@ exports[`App component renders correctly 1`] = `
               Johnny English
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -492,10 +573,20 @@ exports[`App component renders correctly 1`] = `
               Shutter Island
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -518,10 +609,20 @@ exports[`App component renders correctly 1`] = `
               Pulp Fiction
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -544,10 +645,20 @@ exports[`App component renders correctly 1`] = `
               No Country for Old Men
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -570,10 +681,20 @@ exports[`App component renders correctly 1`] = `
               Snatch
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -596,10 +717,20 @@ exports[`App component renders correctly 1`] = `
               Moonrise Kingdom
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -622,10 +753,20 @@ exports[`App component renders correctly 1`] = `
               Seven Years in Tibet
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -648,10 +789,20 @@ exports[`App component renders correctly 1`] = `
               Midnight Special
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -674,10 +825,20 @@ exports[`App component renders correctly 1`] = `
               War of the Worlds
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -700,10 +861,20 @@ exports[`App component renders correctly 1`] = `
               Dardjeeling Limited
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -726,10 +897,20 @@ exports[`App component renders correctly 1`] = `
               Orlando
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -752,10 +933,20 @@ exports[`App component renders correctly 1`] = `
               Mindhunter
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -778,6 +969,15 @@ exports[`App component renders correctly 1`] = `
               Midnight Special
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
+            />
+          </div>
         </article>
       </div>
       <div

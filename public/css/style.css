@@ -1392,3 +1392,31 @@ main {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
+
+.film-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 280px;
+  height: 175px;
+}
+
+.film-active video {
+  width: 280px;
+  height: 175px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@supports (object-fit: cover) and (-ms-ime-align:auto) {
+  .film-active video {
+    width: auto;
+    height: 100%;
+    object-fit: none;
+  }
+}
+
+.film-hide {
+  display: none;
+}

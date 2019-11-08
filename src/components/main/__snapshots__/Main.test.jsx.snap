@@ -262,6 +262,7 @@ exports[`Main component renders correctly 1`] = `
         <article
           className="small-movie-card catalog__movies-card"
           onMouseEnter={[Function]}
+          onMouseOut={[Function]}
         >
           <div
             className="small-movie-card__image"
@@ -284,6 +285,15 @@ exports[`Main component renders correctly 1`] = `
               Robocop
             </a>
           </h3>
+          <div
+            className="film-hide"
+          >
+            <video
+              className="preview"
+              controls={true}
+              src=""
+            />
+          </div>
         </article>
       </div>
       <div

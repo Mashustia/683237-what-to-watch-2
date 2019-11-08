@@ -15,7 +15,8 @@ it(`Main component renders correctly`, () => {
       runTime: ``,
       released: ``,
       reviews: [],
-      cover: ``
+      cover: ``,
+      preview: ``
     }]} />)
     .toJSON();
   expect(component).toMatchSnapshot();
