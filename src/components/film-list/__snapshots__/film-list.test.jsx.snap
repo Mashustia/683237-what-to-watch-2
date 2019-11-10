@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilmList component renders correctly 1`] = `
+<div
+  className="catalog__movies-list"
+>
+  <article
+    className="small-movie-card catalog__movies-card"
+    onMouseEnter={[Function]}
+    onMouseOut={[Function]}
+  >
+    <div
+      className="small-movie-card__image"
+    >
+      <img
+        alt="F"
+        height="175"
+        src="img/f.jpg"
+        width="280"
+      />
+    </div>
+    <h3
+      className="small-movie-card__title"
+      onClick={[Function]}
+    >
+      <a
+        className="small-movie-card__link"
+        href="movie-page.html"
+      >
+        F
+      </a>
+    </h3>
+    <div
+      className="film-hide"
+    >
+      <video
+        className="preview"
+        controls={true}
+        src=""
+      />
+    </div>
+  </article>
+</div>
+`;

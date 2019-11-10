@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Main from './main';
+import {Filter} from './filter';
 
-it(`Main component renders correctly`, () => {
+it(`Filter component renders correctly`, () => {
   const component = renderer
-    .create(<Main />)
+    .create(<Filter filter={`All genre`} />)
     .toJSON();
   expect(component).toMatchSnapshot();
 });

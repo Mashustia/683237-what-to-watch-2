@@ -7,7 +7,6 @@ import {FILTERS} from '../../consts/consts';
 
 class Filter extends PureComponent {
   render() {
-    console.log(this.props);
     return (
       <ul className='catalog__genres-list'>
         {FILTERS.map((filter) => <FilterButton name={filter} key={filter} isActive={this.props.filter === filter} />)}
