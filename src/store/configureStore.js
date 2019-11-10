@@ -1,7 +1,7 @@
 import {createStore} from 'redux';
 
-import {filmsReducer} from '../reducer';
+import {reducer} from '../reducer';
 
-const store = createStore(filmsReducer);
+const store = createStore(reducer);
 
 export default store;
