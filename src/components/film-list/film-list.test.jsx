@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import FilmList from './film-list';
+import {FilmList} from './film-list';
 
 it(`FilmList component renders correctly`, () => {
   const component = renderer

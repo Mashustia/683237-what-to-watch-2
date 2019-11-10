@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 
 import FilmCard from '../film-card/film-card';
 
-export class FilmList extends PureComponent {
+class FilmList extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -68,14 +68,14 @@ FilmList.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  films: state.films.films
+  films: state.films
 });
 
 const mapDispatchToProps = () => ({});
 
-const ClassFilmList = connect(
+export {FilmList};
+
+export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(FilmList);
-
-export default ClassFilmList;
