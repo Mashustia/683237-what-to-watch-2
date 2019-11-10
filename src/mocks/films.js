@@ -2,7 +2,7 @@ export const films = [
   {
     id: `1`,
     name: `Fantastic Beasts: The Crimes of Grindelwald`,
-    genre: ``,
+    genre: `Kids & Family`,
     description: ``,
     director: ``,
     starring: ``,
@@ -16,7 +16,7 @@ export const films = [
   {
     id: `2`,
     name: `Bohemian Rhapsody`,
-    genre: ``,
+    genre: `Dramas`,
     description: ``,
     director: ``,
     starring: ``,
@@ -30,7 +30,7 @@ export const films = [
   {
     id: `3`,
     name: `Macbeth`,
-    genre: ``,
+    genre: `Macbeth`,
     description: ``,
     director: ``,
     starring: ``,
@@ -44,7 +44,7 @@ export const films = [
   {
     id: `4`,
     name: `Aviator`,
-    genre: ``,
+    genre: `Aviator`,
     description: ``,
     director: ``,
     starring: ``,
@@ -58,7 +58,7 @@ export const films = [
   {
     id: `5`,
     name: `We need to talk about Kevin`,
-    genre: ``,
+    genre: `Thrillers`,
     description: ``,
     director: ``,
     starring: ``,
@@ -72,7 +72,7 @@ export const films = [
   {
     id: `6`,
     name: `What We Do in the Shadows`,
-    genre: ``,
+    genre: `Comedies`,
     description: ``,
     director: ``,
     starring: ``,
@@ -86,7 +86,7 @@ export const films = [
   {
     id: `7`,
     name: `Revenant`,
-    genre: ``,
+    genre: `Documentary`,
     description: ``,
     director: ``,
     starring: ``,
@@ -100,7 +100,7 @@ export const films = [
   {
     id: `8`,
     name: `Johnny English`,
-    genre: ``,
+    genre: `Comedies`,
     description: ``,
     director: ``,
     starring: ``,
@@ -114,7 +114,7 @@ export const films = [
   {
     id: `9`,
     name: `Shutter Island`,
-    genre: ``,
+    genre: `Thrillers`,
     description: ``,
     director: ``,
     starring: ``,
@@ -128,7 +128,7 @@ export const films = [
   {
     id: `10`,
     name: `Pulp Fiction`,
-    genre: ``,
+    genre: `Crime`,
     description: ``,
     director: ``,
     starring: ``,
@@ -142,7 +142,7 @@ export const films = [
   {
     id: `11`,
     name: `No Country for Old Men`,
-    genre: ``,
+    genre: `Crime`,
     description: ``,
     director: ``,
     starring: ``,
@@ -156,7 +156,7 @@ export const films = [
   {
     id: `12`,
     name: `Snatch`,
-    genre: ``,
+    genre: `Comedies`,
     description: ``,
     director: ``,
     starring: ``,
@@ -170,7 +170,7 @@ export const films = [
   {
     id: `13`,
     name: `Moonrise Kingdom`,
-    genre: ``,
+    genre: `Romance`,
     description: ``,
     director: ``,
     starring: ``,
@@ -184,7 +184,7 @@ export const films = [
   {
     id: `14`,
     name: `Seven Years in Tibet`,
-    genre: ``,
+    genre: `Dramas`,
     description: ``,
     director: ``,
     starring: ``,
@@ -198,7 +198,7 @@ export const films = [
   {
     id: `15`,
     name: `Midnight Special`,
-    genre: ``,
+    genre: `Sci-Fi`,
     description: ``,
     director: ``,
     starring: ``,
@@ -212,7 +212,7 @@ export const films = [
   {
     id: `16`,
     name: `War of the Worlds`,
-    genre: ``,
+    genre: `Sci-Fi`,
     description: ``,
     director: ``,
     starring: ``,
@@ -226,7 +226,7 @@ export const films = [
   {
     id: `17`,
     name: `Dardjeeling Limited`,
-    genre: ``,
+    genre: `Comedies`,
     description: ``,
     director: ``,
     starring: ``,
@@ -240,7 +240,7 @@ export const films = [
   {
     id: `18`,
     name: `Orlando`,
-    genre: ``,
+    genre: `Documentary`,
     description: ``,
     director: ``,
     starring: ``,
@@ -254,7 +254,7 @@ export const films = [
   {
     id: `19`,
     name: `Mindhunter`,
-    genre: ``,
+    genre: `Crime`,
     description: ``,
     director: ``,
     starring: ``,
@@ -268,7 +268,7 @@ export const films = [
   {
     id: `20`,
     name: `Midnight Special`,
-    genre: ``,
+    genre: `Sci-Fi`,
     description: ``,
     director: ``,
     starring: ``,

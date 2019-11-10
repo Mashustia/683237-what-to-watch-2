@@ -68,14 +68,12 @@ FilmList.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  films: state.films
+  films: state.filteredFilms
 });
-
-const mapDispatchToProps = () => ({});
 
 export {FilmList};
 
 export default connect(
     mapStateToProps,
-    mapDispatchToProps
+    undefined
 )(FilmList);

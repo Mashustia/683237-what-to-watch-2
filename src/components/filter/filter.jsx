@@ -6,8 +6,15 @@ import {ActionCreator} from '../../reducer';
 import FilterButton from './filter-button/filter-button';
 
 class Filter extends PureComponent {
+  onChoose(name) {
+    return (e) => {
+      e.preventDefault();
+      this.props.onChooseFilter(name);
+    };
+  }
+
   render() {
-    const {filters, onChooseFilter, currentFilter} = this.props;
+    const {filters, currentFilter} = this.props;
     return (
       <ul className='catalog__genres-list'>
         {filters.map((filter) => (
@@ -15,7 +22,7 @@ class Filter extends PureComponent {
             name={filter}
             key={filter}
             isActive={currentFilter === filter}
-            onClick={onChooseFilter(filter)}
+            onChooseFilter={this.onChoose(filter)}
           />))}
       </ul>
     );
@@ -34,7 +41,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  onChooseFilter: (filerName) => dispatch(ActionCreator.changeGenre(filerName))
+  onChooseFilter: (name) => dispatch(ActionCreator.changeFilter(name))
 });
 
 export {Filter};

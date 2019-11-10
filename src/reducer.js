@@ -8,13 +8,18 @@ const initialState = {
   filteredFilms: films
 };
 
-const CHANGE_GENRE = `CHANGE_GENRE`;
+const CHANGE_FILTER = `CHANGE_FILTER`;
+const DEFAULT_STATE = `DEFAULT_STATE`;
 
-export function filmsReducer(state = initialState, action) {
+export function filmsReducer(state = Object.assign({}, initialState), action) {
   switch (action.type) {
-    case CHANGE_GENRE:
+    case CHANGE_FILTER: {
       const newFilms = state.films.filter((film) => film.genre === action.payload);
-      return Object.assign({}, state, {filteredFilms: newFilms});
+      return Object.assign({}, state, {filteredFilms: newFilms}, {currentFilter: action.payload});
+    }
+    case DEFAULT_STATE: {
+      return Object.assign({}, state, initialState);
+    }
 
     default:
       return Object.assign({}, state);
@@ -22,8 +27,16 @@ export function filmsReducer(state = initialState, action) {
 }
 
 export const ActionCreator = {
-  changeGenre: (genre) => ({
-    type: CHANGE_GENRE,
-    payload: genre
-  })
+  changeFilter: (genre) => {
+    if (genre === FilterNames.ALL) {
+      return {
+        type: DEFAULT_STATE,
+        payload: genre
+      };
+    }
+    return {
+      type: CHANGE_FILTER,
+      payload: genre
+    };
+  }
 };
