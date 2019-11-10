@@ -2,28 +2,40 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
+import {ActionCreator} from '../../reducer';
 import FilterButton from './filter-button/filter-button';
-import {FILTERS} from '../../consts/consts';
 
 class Filter extends PureComponent {
   render() {
+    const {filters, onChooseFilter, currentFilter} = this.props;
     return (
       <ul className='catalog__genres-list'>
-        {FILTERS.map((filter) => <FilterButton name={filter} key={filter} isActive={this.props.filter === filter} />)}
+        {filters.map((filter) => (
+          <FilterButton
+            name={filter}
+            key={filter}
+            isActive={currentFilter === filter}
+            onClick={onChooseFilter(filter)}
+          />))}
       </ul>
     );
   }
 }
 
 Filter.propTypes = {
-  filter: PropTypes.string.isRequired
+  filters: PropTypes.arrayOf(PropTypes.string.isRequired),
+  currentFilter: PropTypes.string.isRequired,
+  onChooseFilter: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => ({
-  filter: state.filter
+  filters: state.filters,
+  currentFilter: state.currentFilter
 });
 
-const mapDispatchToProps = () => ({});
+const mapDispatchToProps = (dispatch) => ({
+  onChooseFilter: (filerName) => dispatch(ActionCreator.changeGenre(filerName))
+});
 
 export {Filter};
 

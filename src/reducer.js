@@ -1,8 +1,9 @@
 import {films} from './mocks/films';
-import {FilterNames} from './consts/consts';
+import {FILTERS, FilterNames} from './consts/consts';
 
 const initialState = {
-  filter: FilterNames.ALL,
+  filters: FILTERS,
+  currentFilter: FilterNames.ALL,
   films,
   filteredFilms: films
 };
