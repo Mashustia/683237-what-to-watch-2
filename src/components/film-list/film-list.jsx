@@ -1,9 +1,10 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 
-import FilmCard from '../FilmCard/FilmCard';
+import FilmCard from '../film-card/film-card';
 
-class FilmList extends Component {
+export class FilmList extends PureComponent {
   constructor(props) {
     super(props);
 
@@ -66,4 +67,15 @@ FilmList.propTypes = {
   )
 };
 
-export default FilmList;
+const mapStateToProps = (state) => ({
+  films: state.films.films
+});
+
+const mapDispatchToProps = () => ({});
+
+const ClassFilmList = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(FilmList);
+
+export default ClassFilmList;

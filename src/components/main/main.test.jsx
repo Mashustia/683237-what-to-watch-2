@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './App';
+import Main from './main';
 
-it(`App component renders correctly`, () => {
+it(`Main component renders correctly`, () => {
   const component = renderer
-    .create(<App />)
+    .create(<Main />)
     .toJSON();
   expect(component).toMatchSnapshot();
 });

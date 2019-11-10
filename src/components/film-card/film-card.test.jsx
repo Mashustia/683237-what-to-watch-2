@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import FilmCard from './FilmCard';
+import FilmCard from './film-card';
 
 it(`FilmCard component renders correctly`, () => {
   const component = renderer

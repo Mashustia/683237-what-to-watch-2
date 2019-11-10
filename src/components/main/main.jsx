@@ -1,11 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import FilmList from '../FilmList/FilmList';
+import FilmList from '../film-list/film-list';
 
-export const Main = (props) => {
-  const {films} = props;
-
+export const Main = () => {
   return (
     <div id='main'>
       <section className="movie-card">
@@ -100,7 +97,7 @@ export const Main = (props) => {
             </li>
           </ul>
 
-          <FilmList films={films}/>
+          <FilmList />
 
           <div className="catalog__more">
             <button className="catalog__button" type="button">Show more</button>
@@ -123,25 +120,6 @@ export const Main = (props) => {
       </div>
     </div>
   );
-};
-
-Main.propTypes = {
-  films: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string,
-        name: PropTypes.string.isRequired,
-        genre: PropTypes.string.isRequired,
-        description: PropTypes.string,
-        director: PropTypes.string,
-        starring: PropTypes.string,
-        rating: PropTypes.string,
-        runTime: PropTypes.string,
-        released: PropTypes.string,
-        reviews: PropTypes.array,
-        cover: PropTypes.string,
-        preview: PropTypes.string
-      })
-  )
 };
 
 export default Main;
