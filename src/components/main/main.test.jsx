@@ -1,11 +1,14 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import Enzyme, {shallow} from 'enzyme/build';
+import Adapter from 'enzyme-adapter-react-16/build';
 
 import Main from './main';
 
+Enzyme.configure({adapter: new Adapter()});
+
 it(`Main component renders correctly`, () => {
-  const component = renderer
-    .create(<Main />)
-    .toJSON();
-  expect(component).toMatchSnapshot();
+  const main = shallow(
+      <Main />
+  );
+  expect(main).toMatchSnapshot();
 });
