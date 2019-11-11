@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
+import {FilterNames} from '../../consts/consts';
 import FilmCard from '../film-card/film-card';
 
 class FilmList extends PureComponent {
@@ -29,11 +30,12 @@ class FilmList extends PureComponent {
   }
 
   render() {
-    const {films} = this.props;
+    const {films, filter} = this.props;
+    const filteredFilms = filter === FilterNames.ALL ? films : films.filter((film) => film.genre === filter);
 
     return (
       <div className='catalog__movies-list'>
-        {films.map((film) => <FilmCard
+        {filteredFilms.map((film) => <FilmCard
           film={film.name}
           key={film.id}
           id={film.id}
@@ -64,11 +66,13 @@ FilmList.propTypes = {
         cover: PropTypes.string,
         preview: PropTypes.string
       })
-  )
+  ),
+  filter: PropTypes.string.isRequired
 };
 
 const mapStateToProps = (state) => ({
-  films: state.filteredFilms
+  films: state.films,
+  filter: state.currentFilter
 });
 
 export {FilmList};
