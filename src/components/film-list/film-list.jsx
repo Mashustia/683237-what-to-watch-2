@@ -74,6 +74,5 @@ const mapStateToProps = (state) => ({
 export {FilmList};
 
 export default connect(
-    mapStateToProps,
-    undefined
+    mapStateToProps
 )(FilmList);

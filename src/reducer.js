@@ -11,7 +11,7 @@ export const initialState = {
 export const CHANGE_FILTER = `CHANGE_FILTER`;
 export const DEFAULT_STATE = `DEFAULT_STATE`;
 
-export function reducer(state = Object.assign({}, initialState), action) {
+export function reducer(state = initialState, action) {
   switch (action.type) {
     case CHANGE_FILTER: {
       const newFilms = state.films.filter((film) => film.genre === action.payload);
