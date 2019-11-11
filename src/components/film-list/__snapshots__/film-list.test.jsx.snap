@@ -13,9 +13,9 @@ exports[`FilmList component renders correctly 1`] = `
       className="small-movie-card__image"
     >
       <img
-        alt="F"
+        alt="Fantastic Beasts: The Crimes of Grindelwald"
         height="175"
-        src="img/f.jpg"
+        src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
         width="280"
       />
     </div>
@@ -27,7 +27,7 @@ exports[`FilmList component renders correctly 1`] = `
         className="small-movie-card__link"
         href="movie-page.html"
       >
-        F
+        Fantastic Beasts: The Crimes of Grindelwald
       </a>
     </h3>
     <div
@@ -36,7 +36,7 @@ exports[`FilmList component renders correctly 1`] = `
       <video
         className="preview"
         controls={true}
-        src=""
+        src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
       />
     </div>
   </article>

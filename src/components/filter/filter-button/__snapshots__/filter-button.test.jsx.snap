@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterButton component renders correctly 1`] = `
+<li
+  className="catalog__genres-item catalog__genres-item--active"
+  onClick={[MockFunction]}
+>
+  <a
+    className="catalog__genres-link"
+    href="#"
+  >
+    name
+  </a>
+</li>
+`;

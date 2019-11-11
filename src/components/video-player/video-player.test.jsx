@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from './video-player';
 
 it(`VideoPlayer component renders correctly`, () => {
   const component = renderer
