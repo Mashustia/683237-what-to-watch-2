@@ -1,54 +1,29 @@
-import React, {PureComponent} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
 import {FilterNames} from '../../consts/consts';
 import FilmCard from '../film-card/film-card';
 
-class FilmList extends PureComponent {
-  constructor(props) {
-    super(props);
+const FilmList = (props) => {
+  const {films, filter, onFilmFocus, onFilmLeave, activeFilm} = props;
+  const filteredFilms = filter === FilterNames.ALL ? films : films.filter((film) => film.genre === filter);
 
-    this.state = {
-      focusFilmId: null
-    };
-
-    this.onFilmFocus = this.onFilmFocus.bind(this);
-    this.onFilmLeave = this.onFilmLeave.bind(this);
-  }
-
-  onFilmFocus(id) {
-    this.setState({
-      focusFilmId: id
-    });
-  }
-
-  onFilmLeave() {
-    this.setState({
-      focusFilmId: null
-    });
-  }
-
-  render() {
-    const {films, filter} = this.props;
-    const filteredFilms = filter === FilterNames.ALL ? films : films.filter((film) => film.genre === filter);
-
-    return (
-      <div className='catalog__movies-list'>
-        {filteredFilms.map((film) => <FilmCard
-          film={film.name}
-          key={film.id}
-          id={film.id}
-          onClick={() => {}}
-          preview={film.preview}
-          onFilmFocus={this.onFilmFocus}
-          onFilmLeave={this.onFilmLeave}
-          isVideoActive={this.state.focusFilmId === film.id}
-        />)}
-      </div>
-    );
-  }
-}
+  return (
+    <div className='catalog__movies-list'>
+      {filteredFilms.map((film) => <FilmCard
+        film={film.name}
+        key={film.id}
+        id={film.id}
+        onClick={() => {}}
+        preview={film.preview}
+        onFilmFocus={onFilmFocus}
+        onFilmLeave={onFilmLeave}
+        isVideoActive={activeFilm === film.id}
+      />)}
+    </div>
+  );
+};
 
 FilmList.propTypes = {
   films: PropTypes.arrayOf(
@@ -67,7 +42,10 @@ FilmList.propTypes = {
         preview: PropTypes.string
       })
   ),
-  filter: PropTypes.string.isRequired
+  filter: PropTypes.string.isRequired,
+  onFilmFocus: PropTypes.func.isRequired,
+  onFilmLeave: PropTypes.func.isRequired,
+  activeFilm: PropTypes.string
 };
 
 const mapStateToProps = (state) => ({
