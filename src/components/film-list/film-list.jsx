@@ -6,7 +6,7 @@ import {FilterNames} from '../../consts/consts';
 import FilmCard from '../film-card/film-card';
 
 const FilmList = (props) => {
-  const {films, filter, onFilmFocus, onFilmLeave, activeFilm} = props;
+  const {films, filter, onFocus, onBlur, isActive} = props;
   const filteredFilms = filter === FilterNames.ALL ? films : films.filter((film) => film.genre === filter);
 
   return (
@@ -17,9 +17,9 @@ const FilmList = (props) => {
         id={film.id}
         onClick={() => {}}
         preview={film.preview}
-        onFilmFocus={onFilmFocus}
-        onFilmLeave={onFilmLeave}
-        isVideoActive={activeFilm === film.id}
+        onFilmFocus={onFocus}
+        onFilmLeave={onBlur}
+        isVideoActive={isActive === film.id}
       />)}
     </div>
   );
@@ -43,9 +43,9 @@ FilmList.propTypes = {
       })
   ),
   filter: PropTypes.string.isRequired,
-  onFilmFocus: PropTypes.func.isRequired,
-  onFilmLeave: PropTypes.func.isRequired,
-  activeFilm: PropTypes.string
+  onFocus: PropTypes.func.isRequired,
+  onBlur: PropTypes.func.isRequired,
+  isActive: PropTypes.string
 };
 
 const mapStateToProps = (state) => ({

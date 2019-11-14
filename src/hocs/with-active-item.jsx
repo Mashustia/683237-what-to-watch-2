@@ -6,22 +6,22 @@ const withActiveItem = (Component) => {
       super(props);
 
       this.state = {
-        focusFilmId: null
+        isActive: null
       };
 
-      this.onFilmFocus = this.onFilmFocus.bind(this);
-      this.onFilmLeave = this.onFilmLeave.bind(this);
+      this.onFocus = this.onFocus.bind(this);
+      this.onBlur = this.onBlur.bind(this);
     }
 
-    onFilmFocus(id) {
+    onFocus(id) {
       this.setState({
-        focusFilmId: id
+        isActive: id
       });
     }
 
-    onFilmLeave() {
+    onBlur() {
       this.setState({
-        focusFilmId: null
+        isActive: null
       });
     }
 
@@ -29,9 +29,9 @@ const withActiveItem = (Component) => {
       return (
         <Component
           {...this.props}
-          onFilmFocus={this.onFilmFocus}
-          onFilmLeave={this.onFilmLeave}
-          activeFilm={this.state.focusFilmId}
+          onFocus={this.onFocus}
+          onBlur={this.onBlur}
+          isActive={this.state.isActive}
         />
       );
     }
