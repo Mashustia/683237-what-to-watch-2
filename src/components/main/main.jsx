@@ -2,7 +2,7 @@ import React from 'react';
 
 import FilmList from '../film-list/film-list';
 import Filter from '../filter/filter';
-import withActiveItem from '../../hocs/HoCwithActiveItem';
+import withActiveItem from '../../hocs/with-active-item';
 
 export const Main = () => {
   const Films = withActiveItem(FilmList);

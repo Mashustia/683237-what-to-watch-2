@@ -23,7 +23,7 @@ it(`FilmList component renders correctly`, () => {
       filter={`Kids & Family`}
       onFilmFocus={jest.fn()}
       onFilmLeave={jest.fn()}
-      activeFilm={true}
+      activeFilm={`1`}
     />)
     .toJSON();
   expect(component).toMatchSnapshot();
