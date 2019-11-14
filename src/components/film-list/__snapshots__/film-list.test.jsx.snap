@@ -7,7 +7,7 @@ exports[`FilmList component renders correctly 1`] = `
   <article
     className="small-movie-card catalog__movies-card"
     onMouseEnter={[Function]}
-    onMouseOut={[Function]}
+    onMouseOut={[MockFunction]}
   >
     <div
       className="small-movie-card__image"
