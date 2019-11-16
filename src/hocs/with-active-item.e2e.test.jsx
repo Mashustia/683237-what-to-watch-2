@@ -14,31 +14,21 @@ const MockComponent = (props) => <div
   onMouseOut={() => props.onBlur()}
 />;
 const MockComponentWrapped = withActiveItem(MockComponent);
-
 MockComponent.propTypes = {
   onFocus: PropTypes.func.isRequired,
   onBlur: PropTypes.func.isRequired,
   isActive: PropTypes.string
 };
-
 it(`Should change isActive to id on focus and to null on blur`, () => {
   const defaultState = null;
-  const onFocus = jest.fn();
-  const onBlur = jest.fn();
 
-  const wrapper = mount(<MockComponentWrapped
-    onFocus={onFocus}
-    onBlur={onBlur}
-    isActive={defaultState}
-  />);
-
-  const activeItem = wrapper.find(`.test`);
+  const wrapper = mount(<MockComponentWrapped/>);
 
   expect(wrapper.state().isActive).toEqual(defaultState);
+  wrapper.simulate(`mouseEnter`);
 
-  activeItem.simulate(`mouseEnter`, onFocus);
   expect(wrapper.state().isActive).toEqual(id);
+  wrapper.simulate(`mouseout`);
 
-  activeItem.simulate(`mouseLeave`, onBlur());
   expect(wrapper.state().isActive).toEqual(null);
 });
