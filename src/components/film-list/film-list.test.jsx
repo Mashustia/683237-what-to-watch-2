@@ -21,6 +21,9 @@ it(`FilmList component renders correctly`, () => {
         preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
       }]}
       filter={`Kids & Family`}
+      onFocus={jest.fn()}
+      onBlur={jest.fn()}
+      isActive={`1`}
     />)
     .toJSON();
   expect(component).toMatchSnapshot();

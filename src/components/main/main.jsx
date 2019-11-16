@@ -2,8 +2,10 @@ import React from 'react';
 
 import FilmList from '../film-list/film-list';
 import Filter from '../filter/filter';
+import withActiveItem from '../../hocs/with-active-item';
 
 export const Main = () => {
+  const Films = withActiveItem(FilmList);
   return (
     <div id='main'>
       <section className='movie-card'>
@@ -66,7 +68,7 @@ export const Main = () => {
 
           <Filter />
 
-          <FilmList />
+          <Films />
 
           <div className='catalog__more'>
             <button className='catalog__button' type='button'>Show more</button>

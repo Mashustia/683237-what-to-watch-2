@@ -34,6 +34,7 @@ class FilmCard extends React.PureComponent {
     );
   }
 }
+
 FilmCard.propTypes = {
   film: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
