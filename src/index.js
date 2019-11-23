@@ -1,10 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
+import {createStore, compose, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
 
-import store from './store/configureStore';
-
+import {ActionCreator, reducer} from './reducer';
 import App from './components/app/app';
+import configureAPI from './api';
+
+const api = configureAPI((...args) => store.dispatch(...args));
+
+const composeEnhancers = (typeof window !== `undefined` && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
+
+const store = createStore(
+    reducer,
+    composeEnhancers(applyMiddleware(thunk.withExtraArgument(api)))
+);
+
+ActionCreator.getFilms();
 
 const init = () => {
   ReactDOM.render(
