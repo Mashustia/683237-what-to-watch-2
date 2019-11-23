@@ -18,8 +18,6 @@ const store = createStore(
     composeEnhancers(applyMiddleware(thunk.withExtraArgument(api)))
 );
 
-ActionCreator.getFilms();
-
 const init = () => {
   ReactDOM.render(
       <Provider store={store}>
@@ -30,3 +28,5 @@ const init = () => {
 };
 
 init();
+
+store.dispatch(ActionCreator.getFilms());

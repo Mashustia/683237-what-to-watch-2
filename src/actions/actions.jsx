@@ -13,11 +13,12 @@ export const ActionCreator = {
     };
   },
   getFilms: () => {
-    const films = axios.get(`/films`, config);
-
-    return {
-      type: CHANGE_FILTER,
-      payload: films
-    };
+    return (dispatch) =>
+      axios.get(`/films`, config).then((resp) => {
+        dispatch({
+          type: GET_FILMS,
+          payload: resp.data
+        });
+      });
   }
 };

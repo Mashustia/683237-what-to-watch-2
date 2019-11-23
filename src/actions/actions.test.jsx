@@ -1,5 +1,5 @@
-import {CHANGE_FILTER, ActionCreator} from './actions/actions';
-import {FilterNames} from './consts/consts';
+import {CHANGE_FILTER, ActionCreator} from './actions';
+import {FilterNames} from './../consts/consts';
 
 describe(`Action creators work correctly`, () => {
   it(`Action creator for changing filter returns correct action`, () =>
