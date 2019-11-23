@@ -38,7 +38,7 @@ class FilmCard extends React.PureComponent {
 FilmCard.propTypes = {
   film: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   isVideoActive: PropTypes.bool.isRequired,
   onFilmFocus: PropTypes.func.isRequired,
   onFilmLeave: PropTypes.func.isRequired,

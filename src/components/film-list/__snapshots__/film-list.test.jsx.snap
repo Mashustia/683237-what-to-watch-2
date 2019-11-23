@@ -3,42 +3,5 @@
 exports[`FilmList component renders correctly 1`] = `
 <div
   className="catalog__movies-list"
->
-  <article
-    className="small-movie-card catalog__movies-card"
-    onMouseEnter={[Function]}
-    onMouseOut={[MockFunction]}
-  >
-    <div
-      className="small-movie-card__image"
-    >
-      <img
-        alt="Fantastic Beasts: The Crimes of Grindelwald"
-        height="175"
-        src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-        width="280"
-      />
-    </div>
-    <h3
-      className="small-movie-card__title"
-      onClick={[Function]}
-    >
-      <a
-        className="small-movie-card__link"
-        href="movie-page.html"
-      >
-        Fantastic Beasts: The Crimes of Grindelwald
-      </a>
-    </h3>
-    <div
-      className="film-hide"
-    >
-      <video
-        className="preview"
-        controls={true}
-        src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"
-      />
-    </div>
-  </article>
-</div>
+/>
 `;

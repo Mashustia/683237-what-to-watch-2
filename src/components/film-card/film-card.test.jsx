@@ -7,7 +7,7 @@ it(`FilmCard component renders correctly`, () => {
   const component = renderer
     .create(<FilmCard
       film={`Robocop`}
-      id={`1`}
+      id={1}
       onFilmFocus={jest.fn()}
       onClick={jest.fn()}
       isVideoActive={false}

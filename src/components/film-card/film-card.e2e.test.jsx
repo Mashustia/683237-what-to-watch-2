@@ -11,7 +11,7 @@ it(`Handler is called by click on heading`, () => {
   const filmCard = shallow(
       <FilmCard
         film={``}
-        id={`0`}
+        id={0}
         onFilmFocus={jest.fn()}
         onClick={preventDefault}
         isVideoActive={false}
@@ -33,7 +33,7 @@ it(`Handler returns film id`, () => {
   const filmCard = shallow(
       <FilmCard
         film={``}
-        id={`0`}
+        id={0}
         onFilmFocus={returnId}
         onClick={jest.fn()}
         isVideoActive={false}
