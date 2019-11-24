@@ -10,11 +10,12 @@ class FilmCard extends React.PureComponent {
   }
 
   onFilmFocus() {
-    this.props.onFilmFocus(this.props.id);
+    this.props.onFilmFocus(this.props.film.id);
   }
 
   render() {
-    const {film, onClick, onFilmLeave, isVideoActive, preview} = this.props;
+    const {onClick, onFilmLeave, isVideoActive} = this.props;
+    const {preview_image: previewImage, name, preview_video_link: previewVideo} = this.props.film;
 
     return (
       <article
@@ -23,25 +24,30 @@ class FilmCard extends React.PureComponent {
         onMouseOut={onFilmLeave}
       >
         <div className='small-movie-card__image'>
-          <img src={preview} alt={film} width='280' height='175'/>
+          <img src={previewImage} alt={name} width='280' height='175'/>
         </div>
         <h3 className='small-movie-card__title' onClick={onClick}>
-          <a className='small-movie-card__link' href='movie-page.html'>{film}</a>
+          <a className='small-movie-card__link' href='movie-page.html'>{name}</a>
         </h3>
-        <VideoPlayer preview={preview} active={isVideoActive} />
+        <VideoPlayer preview={previewVideo} active={isVideoActive} />
       </article>
     );
   }
 }
 
 FilmCard.propTypes = {
-  film: PropTypes.string.isRequired,
+  film: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    // eslint-disable-next-line camelcase
+    preview_image: PropTypes.string.isRequired,
+    // eslint-disable-next-line camelcase
+    preview_video_link: PropTypes.string.isRequired
+  }),
   onClick: PropTypes.func.isRequired,
-  id: PropTypes.number.isRequired,
   isVideoActive: PropTypes.bool.isRequired,
   onFilmFocus: PropTypes.func.isRequired,
-  onFilmLeave: PropTypes.func.isRequired,
-  preview: PropTypes.string.isRequired
+  onFilmLeave: PropTypes.func.isRequired
 };
 
 export default FilmCard;

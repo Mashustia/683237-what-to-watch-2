@@ -11,11 +11,9 @@ const FilmList = (props) => {
   return (
     <div className='catalog__movies-list'>
       {films.map((film) => <FilmCard
-        film={film.name}
+        film={film}
         key={film.id}
-        id={film.id}
         onClick={() => {}}
-        preview={film.preview_image}
         onFilmFocus={onFocus}
         onFilmLeave={onBlur}
         isVideoActive={isActive === film.id}
@@ -31,7 +29,8 @@ FilmList.propTypes = {
         name: PropTypes.string.isRequired,
         // eslint-disable-next-line camelcase
         preview_image: PropTypes.string.isRequired,
-        genre: PropTypes.string.isRequired
+        // eslint-disable-next-line camelcase
+        preview_video_link: PropTypes.string.isRequired
       })
   ),
   filter: PropTypes.string.isRequired,

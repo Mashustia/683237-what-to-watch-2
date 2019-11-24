@@ -10,7 +10,9 @@ it(`FilmList component renders correctly`, () => {
         id: 1,
         name: `name`,
         // eslint-disable-next-line camelcase
-        preview_image: `123.jpg`
+        preview_image: `123.jpg`,
+        // eslint-disable-next-line camelcase
+        preview_video_link: `123`
       }]}
       filter={`Kids & Family`}
       onFocus={jest.fn()}

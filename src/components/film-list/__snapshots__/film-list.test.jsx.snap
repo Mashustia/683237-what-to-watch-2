@@ -3,5 +3,43 @@
 exports[`FilmList component renders correctly 1`] = `
 <div
   className="catalog__movies-list"
-/>
+>
+  <article
+    className="small-movie-card catalog__movies-card"
+    onMouseEnter={[Function]}
+    onMouseOut={[MockFunction]}
+  >
+    <div
+      className="small-movie-card__image"
+    >
+      <img
+        alt="name"
+        height="175"
+        src="123.jpg"
+        width="280"
+      />
+    </div>
+    <h3
+      className="small-movie-card__title"
+      onClick={[Function]}
+    >
+      <a
+        className="small-movie-card__link"
+        href="movie-page.html"
+      >
+        name
+      </a>
+    </h3>
+    <div
+      className="film-hide"
+    >
+      <video
+        className="preview"
+        controls={true}
+        preload="none"
+        src="123"
+      />
+    </div>
+  </article>
+</div>
 `;
