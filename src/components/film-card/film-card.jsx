@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {getImgName} from '../../utils/utils';
 import VideoPlayer from '../video-player/video-player';
 
 class FilmCard extends React.PureComponent {
