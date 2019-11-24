@@ -3,15 +3,22 @@ import renderer from 'react-test-renderer';
 
 import FilmCard from './film-card';
 
+const film = {
+  id: 1,
+  name: `name`,
+  // eslint-disable-next-line camelcase
+  preview_image: `123.jpg`,
+  // eslint-disable-next-line camelcase
+  preview_video_link: `123link`
+};
+
 it(`FilmCard component renders correctly`, () => {
   const component = renderer
     .create(<FilmCard
-      film={`Robocop`}
-      id={`1`}
+      film={film}
       onFilmFocus={jest.fn()}
       onClick={jest.fn()}
       isVideoActive={false}
-      preview={`test`}
       onFilmLeave={jest.fn()}
     />)
     .toJSON();

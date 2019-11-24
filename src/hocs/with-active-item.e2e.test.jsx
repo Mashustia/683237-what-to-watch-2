@@ -6,19 +6,24 @@ import withActiveItem from './with-active-item';
 import PropTypes from "prop-types";
 
 configure({adapter: new Adapter()});
-const id = `1`;
+
+const id = 1;
+
 const MockComponent = (props) => <div
   className={`test`}
   id={id}
   onMouseEnter={() => props.onFocus(id)}
   onMouseOut={() => props.onBlur()}
 />;
+
 const MockComponentWrapped = withActiveItem(MockComponent);
+
 MockComponent.propTypes = {
   onFocus: PropTypes.func.isRequired,
   onBlur: PropTypes.func.isRequired,
-  isActive: PropTypes.string
+  isActive: PropTypes.number
 };
+
 it(`Should change isActive to id on focus and to null on blur`, () => {
   const defaultState = null;
 

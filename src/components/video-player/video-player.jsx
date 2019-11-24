@@ -52,6 +52,7 @@ class VideoPlayer extends Component {
           className={`preview`}
           src={preview}
           ref={this.videoRef}
+          preload={`none`}
           controls
         />
       </div>
@@ -60,7 +61,7 @@ class VideoPlayer extends Component {
 }
 
 VideoPlayer.propTypes = {
-  preview: PropTypes.string,
+  preview: PropTypes.string.isRequired,
   active: PropTypes.bool
 };
 

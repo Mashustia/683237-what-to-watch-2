@@ -5,17 +5,24 @@ import FilmCard from './film-card';
 
 Enzyme.configure({adapter: new Adapter()});
 
+const film = {
+  id: 1,
+  name: `name`,
+  // eslint-disable-next-line camelcase
+  preview_image: `123.jpg`,
+  // eslint-disable-next-line camelcase
+  preview_video_link: `123link`
+};
+
 it(`Handler is called by click on heading`, () => {
   const preventDefault = jest.fn();
 
   const filmCard = shallow(
       <FilmCard
-        film={``}
-        id={`0`}
+        film={film}
         onFilmFocus={jest.fn()}
         onClick={preventDefault}
         isVideoActive={false}
-        preview={``}
         onFilmLeave={jest.fn()}
       />
   );
@@ -32,12 +39,10 @@ it(`Handler returns film id`, () => {
 
   const filmCard = shallow(
       <FilmCard
-        film={``}
-        id={`0`}
+        film={film}
         onFilmFocus={returnId}
         onClick={jest.fn()}
         isVideoActive={false}
-        preview={``}
         onFilmLeave={jest.fn()}
       />
   );

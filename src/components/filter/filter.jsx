@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
-import {ActionCreator} from '../../reducer';
+import {ActionCreator} from '../../actions/actions';
 import FilterButton from './filter-button/filter-button';
 
 class Filter extends PureComponent {

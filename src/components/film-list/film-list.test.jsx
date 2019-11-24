@@ -7,23 +7,17 @@ it(`FilmList component renders correctly`, () => {
   const component = renderer
     .create(<FilmList
       films={[{
-        id: `1`,
-        name: `Fantastic Beasts: The Crimes of Grindelwald`,
-        genre: `Kids & Family`,
-        description: ``,
-        director: ``,
-        starring: ``,
-        rating: ``,
-        runTime: ``,
-        released: ``,
-        reviews: [],
-        cover: ``,
-        preview: `https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm`
+        id: 1,
+        name: `name`,
+        // eslint-disable-next-line camelcase
+        preview_image: `123.jpg`,
+        // eslint-disable-next-line camelcase
+        preview_video_link: `123`
       }]}
       filter={`Kids & Family`}
       onFocus={jest.fn()}
       onBlur={jest.fn()}
-      isActive={`1`}
+      isActive={1}
     />)
     .toJSON();
   expect(component).toMatchSnapshot();

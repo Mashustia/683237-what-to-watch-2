@@ -1,13 +1,11 @@
-import {films} from './mocks/films';
-import {FILTERS, FilterNames} from './consts/consts';
+import {FILTERS, FilterNames} from '../consts/consts';
+import {CHANGE_FILTER, GET_FILMS} from '../actions/actions';
 
 export const initialState = {
   filters: FILTERS,
   currentFilter: FilterNames.ALL,
-  films
+  films: []
 };
-
-export const CHANGE_FILTER = `CHANGE_FILTER`;
 
 export function reducer(state = initialState, action) {
   switch (action.type) {
@@ -15,16 +13,11 @@ export function reducer(state = initialState, action) {
       return Object.assign({}, state, {currentFilter: action.payload});
     }
 
+    case GET_FILMS: {
+      return Object.assign({}, state, {films: action.payload});
+    }
+
     default:
       return Object.assign({}, state);
   }
 }
-
-export const ActionCreator = {
-  changeFilter: (genre) => {
-    return {
-      type: CHANGE_FILTER,
-      payload: genre
-    };
-  }
-};
