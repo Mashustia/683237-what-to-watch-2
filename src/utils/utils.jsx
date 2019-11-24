@@ -1,3 +1,7 @@
+import {createSelector} from 'reselect';
+
+import {FilterNames} from '../consts/consts';
+
 export function getImgName(film) {
   const COLON = `:`;
   const COLON_REGEXP = /:/g;
@@ -17,3 +21,18 @@ export function getImgName(film) {
 
   return imgName;
 }
+
+const getFilter = (state) => state.currentFilter;
+const getFilteredFilms = (state) => state.films;
+
+export const getFilms = createSelector(
+    [getFilter, getFilteredFilms],
+    (currentFilter, films) => {
+      switch (currentFilter) {
+        case FilterNames.ALL:
+          return films;
+        default:
+          return films.filter((film) => film.genre === currentFilter);
+      }
+    }
+);

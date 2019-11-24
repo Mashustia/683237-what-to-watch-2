@@ -2,16 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
-import {FilterNames} from '../../consts/consts';
+import {getFilms} from '../../utils/utils';
 import FilmCard from '../film-card/film-card';
 
 const FilmList = (props) => {
-  const {films, filter, onFocus, onBlur, isActive} = props;
-  const filteredFilms = filter === FilterNames.ALL ? films : films.filter((film) => film.genre === filter);
+  const {films, onFocus, onBlur, isActive} = props;
 
   return (
     <div className='catalog__movies-list'>
-      {filteredFilms.map((film) => <FilmCard
+      {films.map((film) => <FilmCard
         film={film.name}
         key={film.id}
         id={film.id}
@@ -31,7 +30,8 @@ FilmList.propTypes = {
         id: PropTypes.number.isRequired,
         name: PropTypes.string.isRequired,
         // eslint-disable-next-line camelcase
-        preview_image: PropTypes.string.isRequired
+        preview_image: PropTypes.string.isRequired,
+        genre: PropTypes.string.isRequired
       })
   ),
   filter: PropTypes.string.isRequired,
@@ -41,7 +41,7 @@ FilmList.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  films: state.films,
+  films: getFilms(state),
   filter: state.currentFilter
 });
 

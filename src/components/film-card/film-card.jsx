@@ -24,7 +24,7 @@ class FilmCard extends React.PureComponent {
         onMouseOut={onFilmLeave}
       >
         <div className='small-movie-card__image'>
-          <img src={`img/${getImgName(film)}.jpg`} alt={film} width='280' height='175'/>
+          <img src={preview} alt={film} width='280' height='175'/>
         </div>
         <h3 className='small-movie-card__title' onClick={onClick}>
           <a className='small-movie-card__link' href='movie-page.html'>{film}</a>
